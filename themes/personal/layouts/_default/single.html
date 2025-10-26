@@ -1,0 +1,25 @@
+{{ define "main" }}
+<article class="single">
+    <header class="mb-4">
+        <h1 class="mb-3">{{ .Title }}</h1>
+        {{ if eq .Section "blog" }}
+        <time datetime="{{ .Date.Format "2006-01-02" }}" class="d-block small text-muted">{{ .Date.Format "January 2, 2006" }}</time>
+        {{ end }}
+    </header>
+
+    <div class="content">
+        {{ .Content }}
+    </div>
+
+    {{ if eq .Section "blog" }}
+    <footer class="post-footer mt-5 pt-3 border-top d-flex flex-column flex-md-row justify-content-between gap-3">
+        {{ if .Prev }}
+        <a href="{{ .Prev.Permalink }}" class="prev-post text-decoration-none btn btn-outline-secondary">← {{ .Prev.Title }}</a>
+        {{ end }}
+        {{ if .Next }}
+        <a href="{{ .Next.Permalink }}" class="next-post text-decoration-none btn btn-outline-secondary">{{ .Next.Title }} →</a>
+        {{ end }}
+    </footer>
+    {{ end }}
+</article>
+{{ end }}

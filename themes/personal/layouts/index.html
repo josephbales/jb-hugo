@@ -1,0 +1,18 @@
+{{ define "main" }}
+<article class="home">
+    <h1 class="mb-4">Welcome</h1>
+    <p class="mb-4">Welcome to my personal website. Here you'll find my blog posts, information about me, and ways to get in touch.</p>
+
+    <section class="recent-posts mt-5">
+        <h2 class="mb-4">Recent Blog Posts</h2>
+        {{ range first 5 (where .Site.RegularPages "Section" "blog") }}
+        <article class="post-summary mb-4 pb-3 border-bottom">
+            <h3 class="mb-2"><a href="{{ .Permalink }}" class="text-decoration-none">{{ .Title }}</a></h3>
+            <time datetime="{{ .Date.Format "2006-01-02" }}" class="d-block small text-muted mb-2">{{ .Date.Format "January 2, 2006" }}</time>
+            <p class="mb-0">{{ .Summary }}</p>
+        </article>
+        {{ end }}
+        <p class="mt-4"><a href="{{ "blog" | relURL }}" class="text-decoration-none">View all posts →</a></p>
+    </section>
+</article>
+{{ end }}

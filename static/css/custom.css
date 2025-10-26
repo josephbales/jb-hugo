@@ -1,0 +1,327 @@
+/* Custom styles for personal website with sidebar */
+:root {
+  --sidebar-width: 150px;
+  --content-max-width: 800px;
+  --spacing-unit: 1rem;
+  --transition-speed: 0.3s;
+
+  /* Color Palette */
+  --jbc-blue: #0080FF;
+	--jbc-blue-lite: #E6E6FF;
+  --jbc-green: #80FF80;
+	--jbc-green-lite: #E6FFE6;
+  --jbc-red: #FF8080;
+  --jbc-red-lite: #FFE6E6;
+  --jbc-yellow: #FFFF80;
+	--jbc-yellow-lite: #FFFFE6;
+  --jbc-purple: #8080FF;
+	--jbc-purple-lite: #E6E6FF;
+
+  /* Text colors */
+  --text-dark: #2C2C2C;
+  --text-light: #5A5A5A;
+
+  /* Light theme colors */
+  --background: #FFFFFF;
+  --background-alt: var(--jbc-yellow-lite);
+  --text: var(--text-dark);
+  --text-secondary: var(--text-light);
+  --border: var(--jbc-green-lite);
+  --links: var(--jbc-blue);
+  --accent: var(--jbc-green);
+
+  /* Bootstrap overrides */
+  --bs-body-bg: var(--jbc-yellow);
+  --bs-body-color: var(--text);
+}
+
+/* Body styles */
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Override Bootstrap defaults for layout */
+body {
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-family: "Mandali", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: var(--background);
+  color: var(--bs-body-color);
+}
+
+/* Ensure Bootstrap buttons inherit theme colors */
+.btn {
+  background: var(--background);
+  border-color: var(--border);
+  color: var(--text);
+  border-width: 2px;
+}
+
+.btn:hover {
+  background: var(--background-alt);
+  border-color: var(--links);
+  color: var(--text);
+}
+
+.btn:focus {
+  box-shadow: 0 0 0 0.2rem rgba(65, 105, 225, 0.25);
+}
+
+/* Site header with theme toggle */
+.site-header {
+  background: var(--jbc-blue-lite);
+  border: 0.75rem solid var(--jbc-blue);
+  border-radius: 1rem;
+  padding: var(--spacing-unit);
+  margin: var(--spacing-unit);
+  margin-bottom: 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.site-header h1 {
+  margin: 0;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+}
+
+.site-header h1 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.tagline {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin: 0;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.row {
+  min-height: calc(100vh - 120px); /* Adjust based on header height */
+}
+
+/* Site wrapper for max-width and centering */
+.site-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Sidebar styles */
+.sidebar {
+  width: var(--sidebar-width);
+  min-width: var(--sidebar-width);
+  background: var(--jbc-yellow-lite);
+  border: 0.75rem solid var(--jbc-yellow);
+  border-radius: 1rem;
+  padding: var(--spacing-unit);
+  margin: var(--spacing-unit);
+  height: fit-content;
+  position: sticky;
+  top: var(--spacing-unit);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Navigation styles */
+.mobile-menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--text, #333);
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.mobile-header-menu {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--text, #333);
+  padding: 0.5rem;
+  margin: 0;
+}
+
+/* Override Bootstrap nav-pills colors to match our theme */
+.nav-pills .nav-link {
+  color: var(--text);
+  transition: all var(--transition-speed) ease;
+}
+
+.nav-pills .nav-link:hover {
+  background-color: rgba(65, 105, 225, 0.1);
+  color: var(--links);
+}
+
+.nav-pills .nav-link.active {
+  background-color: var(--links);
+  color: white;
+}
+
+/* Theme toggle */
+
+#theme-toggle {
+	flex-shrink: 0;
+  border: none !important;
+  background: transparent !important;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: var(--text) !important;
+  box-shadow: none !important;
+}
+
+#theme-toggle:hover {
+  background: transparent !important;
+  border: none !important;
+  color: var(--text) !important;
+  opacity: 0.7;
+  transform: scale(1.1);
+  box-shadow: none !important;
+}
+
+#theme-toggle:focus {
+  background: transparent !important;
+  border: none !important;
+  color: var(--text) !important;
+  outline: none;
+  box-shadow: none !important;
+}
+
+#theme-toggle:active {
+  background: transparent !important;
+  border: none !important;
+  color: var(--text) !important;
+  box-shadow: none !important;
+}
+
+/* Main content area */
+.content {
+  flex: 1;
+  padding: var(--spacing-unit);
+  max-width: var(--content-max-width);
+  box-sizing: border-box;
+  background: var(--jbc-green-lite);
+  border: 0.75rem solid var(--jbc-green);
+  border-radius: 1rem;
+  margin: var(--spacing-unit);
+  margin-left: 0;
+}
+
+/* Custom content styles that aren't covered by Bootstrap */
+
+/* Dark theme overrides */
+[data-theme="dark"] {
+  --background: #1a1a1a;
+  --background-alt: #2d2d2d;
+  --text: #e0e0e0;
+  --text-secondary: #b0b0b0;
+  --border: #404040;
+  --links: #6495ED; /* Lighter jbc blue for dark mode */
+  --accent: #90EE90; /* Lighter jbc green for dark mode */
+  --bs-body-bg: #2d2d2d; /* Darker background for dark mode instead of yellow */
+  --bs-body-color: #e0e0e0;
+}
+
+
+[data-theme="dark"] .site-header {
+  background: var(--background-alt);
+  border-color: var(--links);
+}
+
+[data-theme="dark"] .sidebar {
+  background: var(--background-alt);
+  border-color: var(--accent);
+}
+
+[data-theme="dark"] .content {
+  background: var(--background);
+  border-color: var(--border);
+}
+
+/* Site footer */
+.site-footer {
+  background: var(--jbc-purple-lite);
+  border: 0.75rem solid var(--jbc-purple);
+  border-radius: 1rem;
+  padding: var(--spacing-unit);
+  margin: var(--spacing-unit);
+  margin-top: 0;
+}
+
+[data-theme="dark"] .site-footer {
+  background: var(--background-alt);
+  border-color: var(--jbc-purple);
+}
+
+/* Mobile Navigation */
+.mobile-nav-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: var(--spacing-unit);
+  right: var(--spacing-unit);
+  background: var(--jbc-green-lite);
+  border: 0.75rem solid var(--jbc-green);
+  border-radius: 1rem;
+  padding: var(--spacing-unit);
+  z-index: 1000;
+}
+
+.mobile-nav-menu.active {
+  display: block !important;
+}
+
+[data-theme="dark"] .mobile-nav-menu {
+  background: var(--background-alt);
+  border-color: var(--accent);
+}
+
+
+/* Mobile responsiveness - Bootstrap handles most of this */
+@media (max-width: 767.98px) {
+  .site-wrapper {
+    margin: calc(var(--spacing-unit) * 0.5);
+  }
+
+  .site-header,
+  .site-footer,
+  .content {
+    margin: calc(var(--spacing-unit) * 0.5);
+  }
+  
+  /* Reduce animation intensity on mobile for better performance */
+  body::before,
+  body::after {
+    animation-duration: 30s;
+  }
+  
+  .wave {
+    animation-duration: 40s;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --spacing-unit: 0.75rem;
+  }
+}
