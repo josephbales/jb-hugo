@@ -1,69 +1,51 @@
 /* Custom styles for personal website with sidebar */
 :root {
-  --sidebar-width: 150px;
-  --content-max-width: 800px;
-  --spacing-unit: 1rem;
-  --transition-speed: 0.3s;
+    --spacing-unit: 1rem;
 
-  /* Color Palette */
-  --jbc-blue: #0080FF;
-	--jbc-blue-lite: #E6E6FF;
-  --jbc-green: #80FF80;
-	--jbc-green-lite: #E6FFE6;
-  --jbc-red: #FF8080;
-  --jbc-red-lite: #FFE6E6;
-  --jbc-yellow: #FFFF80;
-	--jbc-yellow-lite: #FFFFE6;
-  --jbc-purple: #8080FF;
-	--jbc-purple-lite: #E6E6FF;
+    /* Color Palette */
+    --jbc-blue: #0080FF;
+    --jbc-blue-lite: #E6E6FF;
+    --jbc-blue-translucent: rgba(230, 230, 255, 0.93);
+    --jbc-green: #80FF80;
+    --jbc-green-lite: #E6FFE6;
+    --jbc-green-translucent: rgba(230, 255, 230, 0.93);
+    --jbc-green-translucent-bg: rgba(230, 255, 230, 0.80);
+    --jbc-red: #FF8080;
+    --jbc-red-lite: #FFE6E6;
+    --jbc-red-translucent: rgba(255, 230, 230, 0.93);
+    --jbc-yellow: #FFFF80;
+    --jbc-yellow-lite: #FFFFE6;
+    --jbc-yellow-translucent: rgba(255, 255, 230, 0.93);
+    --jbc-purple: #8080FF;
+    --jbc-purple-lite: #E6E6FF;
+    --jbc-purple-translucent: rgba(230, 230, 255, 0.93);
 
-  /* Text colors */
-  --text-dark: #2C2C2C;
-  --text-light: #5A5A5A;
+    /* Text colors */
+    --text-dark: #2C2C2C;
+    --text-light: #5A5A5A;
 
-  /* Light theme colors */
-  --background: #FFFFFF;
-  --background-alt: var(--jbc-yellow-lite);
-  --text: var(--text-dark);
-  --text-secondary: var(--text-light);
-  --border: var(--jbc-green-lite);
-  --links: var(--jbc-blue);
-  --accent: var(--jbc-green);
+    /* Light theme colors */
+    --background: var(--jbc-green-translucent-bg);
+    --background-alt: var(--jbc-yellow-lite);
+    --text: var(--text-dark);
+    --text-secondary: var(--text-light);
+    --border: var(--jbc-green-lite);
+    --links: var(--jbc-blue);
+    --accent: var(--jbc-green);
 
-  /* Bootstrap overrides */
-  --bs-body-bg: var(--jbc-yellow);
-  --bs-body-color: var(--text);
-}
-
-/* Body styles */
-body {
-  position: relative;
-  overflow-x: hidden;
+    /* Bootstrap overrides */
+    --bs-body-bg: var(--jbc-yellow);
+    --bs-body-color: var(--text);
 }
 
 /* Override Bootstrap defaults for layout */
 body {
-  max-width: none !important;
-  margin: 0 !important;
-  padding: 0 !important;
   font-family: "Mandali", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   background-color: var(--background);
   color: var(--bs-body-color);
 }
 
-/* Ensure Bootstrap buttons inherit theme colors */
-.btn {
-  background: var(--background);
-  border-color: var(--border);
-  color: var(--text);
-  border-width: 2px;
-}
 
-.btn:hover {
-  background: var(--background-alt);
-  border-color: var(--links);
-  color: var(--text);
-}
 
 .btn:focus {
   box-shadow: 0 0 0 0.2rem rgba(65, 105, 225, 0.25);
@@ -71,12 +53,8 @@ body {
 
 /* Site header with theme toggle */
 .site-header {
-  background: var(--jbc-blue-lite);
+  background: var(--jbc-blue-translucent);
   border: 0.75rem solid var(--jbc-blue);
-  border-radius: 1rem;
-  padding: var(--spacing-unit);
-  margin: var(--spacing-unit);
-  margin-bottom: 0;
 }
 
 .header-content {
@@ -111,33 +89,33 @@ body {
   white-space: nowrap;
 }
 
-.row {
-  min-height: calc(100vh - 120px); /* Adjust based on header height */
+/* Main layout */
+.main-layout {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
 }
 
-/* Site wrapper for max-width and centering */
-.site-wrapper {
-  max-width: 1000px;
-  margin: 0 auto;
+@media (max-width: 767.98px) {
+  .main-layout {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Sidebar styles */
 .sidebar {
-  width: var(--sidebar-width);
-  min-width: var(--sidebar-width);
-  background: var(--jbc-yellow-lite);
+  background: var(--jbc-yellow-translucent);
   border: 0.75rem solid var(--jbc-yellow);
-  border-radius: 1rem;
-  padding: var(--spacing-unit);
-  margin: var(--spacing-unit);
   height: fit-content;
-  position: sticky;
   top: var(--spacing-unit);
-  overflow-y: auto;
-  display: flex;
-  flex-direction: column;
+  width: 200px;
 }
 
+@media (max-width: 767.98px) {
+  .sidebar {
+    display: none;
+  }
+}
 
 /* Navigation styles */
 .mobile-menu-toggle {
@@ -216,15 +194,11 @@ body {
 
 /* Main content area */
 .content {
-  flex: 1;
   padding: var(--spacing-unit);
-  max-width: var(--content-max-width);
   box-sizing: border-box;
-  background: var(--jbc-green-lite);
+  background: var(--jbc-green-translucent);
   border: 0.75rem solid var(--jbc-green);
   border-radius: 1rem;
-  margin: var(--spacing-unit);
-  margin-left: 0;
 }
 
 /* Custom content styles that aren't covered by Bootstrap */
@@ -260,12 +234,8 @@ body {
 
 /* Site footer */
 .site-footer {
-  background: var(--jbc-purple-lite);
+  background: var(--jbc-purple-translucent);
   border: 0.75rem solid var(--jbc-purple);
-  border-radius: 1rem;
-  padding: var(--spacing-unit);
-  margin: var(--spacing-unit);
-  margin-top: 0;
 }
 
 [data-theme="dark"] .site-footer {
@@ -296,6 +266,30 @@ body {
   border-color: var(--accent);
 }
 
+/* Mobile header menu panel inside header */
+.mobile-header-panel {
+  display: none;
+}
+
+.site-header.menu-open .mobile-header-panel {
+  display: block;
+}
+
+/* Change header to yellow when mobile menu is open */
+@media (max-width: 767.98px) {
+  .site-header.menu-open {
+    background: var(--jbc-yellow-translucent);
+    border-color: var(--jbc-yellow);
+  }
+}
+
+/* Optional: smooth expand/collapse */
+@media (max-width: 767.98px) {
+  .site-header {
+    transition: max-height 0.25s ease;
+    overflow: hidden; /* keep tidy during transition */
+  }
+}
 
 /* Mobile responsiveness - Bootstrap handles most of this */
 @media (max-width: 767.98px) {
@@ -308,13 +302,13 @@ body {
   .content {
     margin: calc(var(--spacing-unit) * 0.5);
   }
-  
+
   /* Reduce animation intensity on mobile for better performance */
   body::before,
   body::after {
     animation-duration: 30s;
   }
-  
+
   .wave {
     animation-duration: 40s;
   }
