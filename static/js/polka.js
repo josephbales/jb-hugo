@@ -273,8 +273,13 @@
     // Function to create all dots
     function createAllDots() {
       dots = [];
+      const isMobile = window.innerWidth <= 767.98;
+      const duplicatesPerColor = isMobile ? 1 : 3; // Half dots on mobile (6 colors × 1.5 average = 9 dots)
+      
       for (let colorIndex = 0; colorIndex < colors.length; colorIndex++) {
-        for (let duplicate = 0; duplicate < 3; duplicate++) {
+        // On mobile, first 3 colors get 2 dots, last 3 colors get 1 dot = 9 total (half of 18)
+        const duplicates = isMobile && colorIndex < 3 ? 2 : duplicatesPerColor;
+        for (let duplicate = 0; duplicate < duplicates; duplicate++) {
           dots.push(new Dot(canvas.width, canvas.height, colors[colorIndex]));
         }
       }

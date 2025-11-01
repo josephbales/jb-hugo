@@ -15,11 +15,11 @@
 <body class="m-0 p-3 position-relative overflow-x-hidden">
 <div class="container">
 	<div class="row">
-		<header class="site-header rounded-4 p-3">
+		<header class="site-header rounded-4 p-0 p-md-3">
 			<div class="header-content d-flex justify-content-between align-items-center">
-				<button class="mobile-menu-toggle mobile-header-menu btn d-block d-md-none" aria-label="Toggle menu">☰</button>
+				<button class="mobile-menu-toggle btn d-block d-md-none fs-5 mb-1" aria-label="Toggle menu">☰</button>
 				<div class="site-info d-flex align-items-center justify-content-center flex-grow-1 justify-content-md-start">
-					<h1 class="mb-0 me-3 fw-bold"><a href="{{ .Site.BaseURL }}" class="text-decoration-none">{{ .Site.Title }}</a></h1>
+					<h1 class="m-0 fw-bold"><a href="{{ .Site.BaseURL }}" class="text-decoration-none">{{ .Site.Title }}</a></h1>
 					<p class="tagline mb-0 d-none d-md-block">{{ .Site.Params.description }}</p>
 				</div>
 				<div class="theme-toggle">
@@ -61,7 +61,7 @@
 	<div class="row mt-3">
 		<footer class="site-footer text-center rounded-4 p-3">
 			<div class="footer-content">
-				<p class="mb-0 small">&copy; {{ now.Year }} {{ .Site.Title }}. All rights reserved.</p>
+				<p class="mb-0 small">&copy; {{ now.Year }} {{ .Site.Title }}. <span class="text-nowrap">All rights reserved.</span></p>
 			</div>
 		</footer>
 	</div>

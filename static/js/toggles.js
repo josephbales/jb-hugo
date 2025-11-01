@@ -34,7 +34,7 @@
     // Listen for system theme changes
     if (window.matchMedia) {
         const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-        mediaQuery.addListener(function(e) {
+        mediaQuery.addEventListener('change', function(e) {
             // Only auto-switch if user hasn't manually set a preference
             if (!localStorage.getItem('theme')) {
                 const newTheme = e.matches ? 'dark' : 'light';
