@@ -1,22 +1,19 @@
 ---
-title: "Contact"
+title: "Get In Touch"
 date: 2024-01-01
 ---
-
-# Get In Touch
 
 I'd love to hear from you! Here are the best ways to reach me:
 
 ## Email
-**your.email@example.com**
+**joseph.bales@gmail.com**
 
 Feel free to send me an email about anything - whether it's a project collaboration, a question about one of my blog posts, or just to say hello.
 
 ## Social Media
 
-- **LinkedIn**: [Your LinkedIn Profile](https://linkedin.com/in/yourprofile)
-- **Twitter**: [@yourtwitterhandle](https://twitter.com/yourtwitterhandle)
-- **GitHub**: [yourgithub](https://github.com/yourgithub)
+- **LinkedIn**: [josephbales615](https://www.linkedin.com/in/josephbales615/)
+- **Codeberg**: [josephbales](https://codeberg.org/josephbales)
 
 ## Response Time
 
@@ -29,7 +26,6 @@ I'm always open to discussing:
 - Technology and programming
 - Interesting projects and collaborations
 - Book recommendations
-- Coffee meetups (if you're in [Your City])
-- Speaking opportunities
+- Coffee meetups (if you're in Middle Tennessee)
 
 Looking forward to connecting with you!

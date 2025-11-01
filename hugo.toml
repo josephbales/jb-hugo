@@ -1,7 +1,8 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'josephbales.com'
-theme = 'personal'
+baseURL = "https://josephbales.com/"
+languageCode = "en-us"
+title = "josephbales.com"
+theme = "personal"
+summaryLength = 30
 
 [menu]
   [[menu.main]]
@@ -22,5 +23,5 @@ theme = 'personal'
     weight = 40
 
 [params]
-  author = "Your Name"
+  author = "Joseph Bales"
   description = "random thoughts & stuff"
