@@ -2,6 +2,7 @@
 title: "SC-01, Have you no shame?"
 author: Joseph Bales
 date: 2013-05-10
+categories: ["politics"]
 ---
 
 For those of you living in South Carolina's first congressional district, I have one question. Have you no shame?

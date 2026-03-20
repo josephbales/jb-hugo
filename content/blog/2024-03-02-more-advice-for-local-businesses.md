@@ -2,6 +2,7 @@
 title: "Experience with a Local Business"
 author: Joseph Bales
 date: 2024-03-02
+categories: ["business"]
 ---
 I have recently had some work done around my house and I have to say that I am quite disappointed in the quality of the work that was performed. This was perhaps my own fault because I only got one bid for the actual work that was performed, but in my own defense only two of the places I called even responded to me and only one, the one that did the work, actually gave me a bid.
 

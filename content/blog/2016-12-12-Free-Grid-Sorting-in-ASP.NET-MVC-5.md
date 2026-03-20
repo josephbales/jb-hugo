@@ -2,6 +2,7 @@
 title: "MVCGrid.Net"
 author: Joseph Bales
 date: 2016-12-12
+categories: ["programming"]
 ---
 
 I didn't want an entire year to go by without writing a post, so I thought that I would talk a little bit about a neat little tool I found for displaying grid data in ASP.NET MVC 5 projects. It's called [MVCGrid.Net](http://mvcgrid.net/ "MVCGrid.Net"). I say "neat little tool," but it's actually quite powerful now that I know more about how to use it.

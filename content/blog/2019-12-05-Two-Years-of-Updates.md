@@ -2,6 +2,7 @@
 title: "Two+ Years of Updates"
 author: Joseph Bales
 date: 2019-12-05
+categories: ["personal"]
 ---
 Wow, time really flies when you're having fun. It's been over two years since my last update, so let's see how some of the things I've talked about in the past have evolved.. er.. intelligently designed?
 

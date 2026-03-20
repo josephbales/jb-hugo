@@ -2,6 +2,7 @@
 title: "Why I'm no longer a Google fanboy"
 author: Joseph Bales
 date: 2014-05-17
+categories: ["technology"]
 ---
 I used to be a Google fanboy (my wife is still a Google fangirl). I used to sing their praises and recommend their software and services to anyone who asked for the slightest computer advice. But lately I've been rethinking my stance on Google and have started moving in other directions.
 

@@ -2,6 +2,7 @@
 title: "Setting up Apache Virtual Hosts on FreeBSD 10.1"
 author: Joseph Bales
 date: 2015-04-03
+categories: ["programming"]
 ---
 I've been messing around on <a title="The DigitalOcean website" href="http://digitalocean.com" target="_blank">DigitalOcean</a> with a <a title="FreeBSD website" href="http://freebsd.org" target="_blank">FreeBSD</a> 10.1 droplet. First let me say that FreeBSD is awesome. The thing that I like the most about the BSDs is that they don't beat about the bush when it comes to making an OS because the purpose of each BSD <em>is</em> the OS. My main comparison is to Linux based OSes, which are awesome in their own way, but feel a bit splintered. With the BSDs it's not just a kernel with a bunch of GNU apps thrown at it to make it usable, they take great pains to produce a complete OS. So when I need to know how to do something on FreeBSD, there's probably already a darn good document out there with detailed instructions. Hell, you rarely have to go outside the FreeBSD manual unless you're doing something really complex. It just works and that's great!
 

@@ -2,6 +2,7 @@
 title: "More De-Googling"
 author: Joseph Bales
 date: 2023-07-23
+categories: ["technology"]
 ---
 Way back in 2014 I [wrote a post]({% post_url 2014-05-17-why-im-no-longer-a-google-fanboy %}) about no longer being a Google fanboy. Over the last 9 years I've waffled on this a bit. I briefly dipped my toe into the Microsoft ecosystem, but found it lacking (and it's still lacking to this day). So I gradually drifted back into the Google ecosystem for most of my needs.
 

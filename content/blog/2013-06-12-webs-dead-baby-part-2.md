@@ -2,6 +2,7 @@
 title: "Web's Dead, Baby: Part 2"
 author: Joseph Bales
 date: 2013-06-12
+categories: ["programming"]
 ---
 Well, now that I've made you wait a couple of weeks to tell you why the Web is dead, I guess it's time to disappoint (nothing can live up to that amount of hype). As my one piece of evidence I present <a href="http://sachachua.com/blog/2013/05/how-to-learn-emacs-a-hand-drawn-one-pager-for-beginners/" target="_blank">this link</a>. Go ahead, look at it. I'll wait.
 

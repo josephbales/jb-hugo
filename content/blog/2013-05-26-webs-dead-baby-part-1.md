@@ -2,6 +2,7 @@
 title: "Web's Dead, Baby: Part 1"
 author: Joseph Bales
 date: 2013-05-26
+categories: ["programming"]
 ---
 Twenty two years is a good run for most technology these days. In fact it’s a phenomenal run. That's how long the <a href="http://en.wikipedia.org/wiki/World_Wide_Web" target="_blank">World Wide Web</a> has been in existence. But I'm here today to tell you that the web as we know it is DEAD! (The irony of making this statement in a weblog post does not escape me.) What killed the web? How did it die? Is this the end of all things? Come close and I'll tell you the story of the end of the web, but first, a little history.
 

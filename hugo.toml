@@ -4,6 +4,9 @@ title = "josephbales.com"
 theme = "personal"
 summaryLength = 30
 
+[taxonomies]
+  category = "categories"
+
 [menu]
   [[menu.main]]
     name = "Home"

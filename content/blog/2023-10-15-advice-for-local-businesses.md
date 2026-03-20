@@ -2,6 +2,7 @@
 title: "Advice for Local Businesses"
 author: Joseph Bales
 date: 2023-10-15
+categories: ["business"]
 ---
 Dear local businesses,
 

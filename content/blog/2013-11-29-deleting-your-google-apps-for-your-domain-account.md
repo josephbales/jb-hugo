@@ -2,6 +2,7 @@
 title: "Deleting Your Google Apps for Your Domain Account"
 author: Joseph Bales
 date: 2013-11-29
+categories: ["technology"]
 ---
 Okay, I spent about an hour trying to figure this out and finally did it. Google does not make deleting information easy because that information is their product. So the documentation about this particular subject is very sparse and ultimately I got what I needed from a obscure post in one of Google's product forums. I'm posting this here for posterity.
 

@@ -2,6 +2,7 @@
 title: "Primary Challengers Wanted"
 author: Joseph Bales
 date: 2013-04-21
+categories: ["politics"]
 ---
 I'm from Tennessee and if we know one thing, it's how to create terrible, awful politicians. I'd love to see many of our local politicians voted out. Unfortunately, our populace is fairly uneducated and apathetic when it comes to politics. They are used to going into the voting booth and voting for a (D) or (R). The only real hope we have that awful people will get voted out is a primary challenge (or retirement, but nobody's going to be doing us any favors there). Here are my top 3 <del datetime="2013-04-22T02:43:33+00:00">douche bags</del> problematic candidates that deserve a boot.
 

@@ -1,28 +1,16 @@
 {{ define "main" }}
-<section class="list">
+<section class="category-posts">
     <header class="mb-5">
         <h1 class="mb-3">{{ .Title }}</h1>
-        {{ if .Description }}
-        <p class="text-muted">{{ .Description }}</p>
-        {{ end }}
+        {{ $n := len .Pages }}
+        <p class="text-muted">{{ $n }} post{{ if ne $n 1 }}s{{ end }} in this category</p>
     </header>
 
     <div class="posts">
         {{ range .Pages }}
         <article class="post-summary mb-5 pb-3 border-bottom">
             <h2 class="mb-2"><a href="{{ .Permalink }}" class="text-decoration-none">{{ .Title }}</a></h2>
-            {{ if eq .Section "blog" }}
             <time datetime="{{ .Date.Format "2006-01-02" }}" class="d-block small text-muted mb-3">{{ .Date.Format "January 2, 2006" }}</time>
-            {{ end }}
-            {{ if eq .Section "blog" }}
-            {{ with .GetTerms "categories" }}
-            <div class="post-categories-list mb-2">
-                {{ range . }}
-                <a href="{{ .RelPermalink }}" class="badge bg-secondary text-white text-decoration-none small">{{ .LinkTitle }}</a>
-                {{ end }}
-            </div>
-            {{ end }}
-            {{ end }}
             <p class="mb-3">{{ .Summary }}</p>
             <a href="{{ .Permalink }}" class="text-decoration-none btn btn-outline-primary btn-sm">Read more →</a>
         </article>

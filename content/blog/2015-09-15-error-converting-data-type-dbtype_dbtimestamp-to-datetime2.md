@@ -2,6 +2,7 @@
 title: "Error converting data type DBTYPE_DBTIMESTAMP to datetime2"
 author: Joseph Bales
 date: 2015-09-15
+categories: ["programming"]
 ---
 Okay, so here is a post that has been months in the making.
 
